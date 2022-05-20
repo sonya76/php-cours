@@ -5,6 +5,7 @@
      <li><a href="./03-tableaux/index.php">03-tableaux</a></li>
      <li><a href="./04-conditions/index.php">04-conditions</a></li>
      <li><a href="./05-boucles/index.php">05-boucles</a></li>
+     <li><a href="./travaux/travail-00.php/index.php">travaux</a></li>
      <ul>
           <li>
               <a href="https://www.php.net/manual/fr/book.array.php">Document PHP array</a>
