@@ -7,6 +7,7 @@
      <li><a href="./05-boucles/index.php">05-boucles</a></li>
      <li><a href="./travaux/travail-00.php/index.php">travail-00</a></li>
      <li><a href="./travaux/travail-01.php/index.php">travail-01</a></li>
+     <li><a href="./travaux/travail-02.php/index.php">travail-02</a></li>
      <ul>
           <li>
               <a href="https://www.php.net/manual/fr/book.array.php">Document PHP array</a>

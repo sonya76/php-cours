@@ -1,22 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travail-02</title>
+</head>
+<body> 
+<h2>Article</h2>
+
 <?php
-/*
-Travail-02 :
+$json_url = "./persons.json";
+$json = file_get_contents($json_url);
+$articles = json_decode($json, true);
 
-    Travaller avec le fichier json persons.json dans le dossier Travaux
-    Afficher le(a) deuxieme ami(e) de Raymond Jimenez dans un titre html <h3>
-    Afficher la couleur des yeux de Ball Shaffer en gras html strong sous la forme d'une phrase : La couleur des yeux de Ball Shaffer est :
-    Afficher dans une balise html article dans l'ordre suivant :
-        image de la personne dans une balise html img
-        Nom : le nom de la personne
-        Age: age de la personne
-        Couleur des yeux : la couleur des yeux de la personne
-        Email: email de la personne
-        Age: age de la personne
-        Fruit favori : fruit favori de la personne
-        Si isActive est à true : afficher ACTIF
-        Tags : afficher tous les tags de la personne séparé d'une virgule
-        Ne pas afficher la derniere la deniere virgule de tous les tags
-        Chaque personne sera séparé d'une ligne horizontale html <hr>
 
-Vous trouverez une capture du resultat attendu.
- */
+foreach ($articles as $key => $value) {
+?>
+   <table class="table table-striped table-responsive">
+     <tbody>
+
+        <tr>
+         <td><img src="<?php echo $value['picture']; ?>" alt=""></td>
+        </tr>
+        <tr>
+         <td>Nom : 
+             <?php echo $value['name']; ?>
+        </td>
+       </tr>
+       <tr>
+           <td>
+           <?php
+                if ($value['name'] == 'Raymond Jimenez') {
+
+                    foreach ($value['friends'] as $key1 => $value1)
+                    {
+                        if ($key1 == 1) {?>
+                        <h3><?php echo "Ami : " . $value1['name'];?></h3>
+                        <?php
+                        }
+                    }
+                }
+                ?>
+           </td>
+       </tr>
+       <tr>
+       <td>Age : <?php echo $value['age']; ?></td>
+       </tr>
+       <tr>
+         <td>
+            <?php
+                if ($value['name'] == "Ball Shaffer"){
+                ?>
+                    <strong>La couleur des yeux de <?php echo $value['name']; ?>  est  : <?php echo $value['eyeColor']; ?></strong>
+               <?php } else { ?>
+
+             Couleur des yeux : <?php echo $value['eyeColor']?>;
+            <?php } ?>
+        </td>
+       </tr>
+       <tr>
+         <td>Email : <?php echo $value['email']; ?></td>
+       </tr>
+       <tr>
+         <td>Fruit favori : <?php echo $value['favoriteFruit']; ?></td>
+       </tr>
+       <tr>
+         <td>Tags :
+            <?php
+                $lastItem=count($value['tags']);
+
+                foreach ($value['tags'] as $key => $value){
+                    if ($key == $lastItem-1) {
+                        echo  $value . "";
+                    } else {
+                            echo  $value . ", ";
+                    }
+                }
+            ?>
+        </td>
+        <hr>
+       </tr>
+     </tbody>
+       <?php
+}
+?>
+    </table>
+
+</body>
+</html>
