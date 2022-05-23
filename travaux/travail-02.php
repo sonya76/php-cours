@@ -67,6 +67,15 @@ foreach ($articles as $key => $value) {
          <td>Fruit favori : <?php echo $value['favoriteFruit']; ?></td>
        </tr>
        <tr>
+         <td>
+         <?php
+                if ($value['isActive'] == 1){
+                ?>
+                    ACTIF
+               <?php }  ?>
+         </td>
+       </tr>
+       <tr>
          <td>Tags :
             <?php
                 $lastItem=count($value['tags']);
@@ -75,7 +84,7 @@ foreach ($articles as $key => $value) {
                     if ($key == $lastItem-1) {
                         echo  $value . "";
                     } else {
-                            echo  $value . ", ";
+                        echo  $value . ", ";
                     }
                 }
             ?>
