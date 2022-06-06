@@ -12,3 +12,6 @@ Sonia chalal
 ### Exercices
 [travaux](https://github.com/sonya76/php-cours/tree/main/travaux)
 
+[travail-00.php](https://github.com/sonya76/php-cours/blob/travaux/travaux/travail-00.php)    
+[travail-01.php](https://github.com/sonya76/php-cours/blob/travaux/travaux/travail-01.php)    
+[travail-02.php](https://github.com/sonya76/php-cours/blob/travaux/travaux/travail-02.php)
