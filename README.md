@@ -8,7 +8,8 @@ Sonia chalal
 2. [Les variables](https://github.com/sonya76/php-new/blob/main/02-variables/index.php)
 3. [Les tableaux](https://github.com/sonya76/php-cours/tree/main/03-tableaux)    
 4. [Les conditions](https://github.com/sonya76/php-cours/tree/main/04-conditions)    
-5. [Les boucles](https://github.com/sonya76/php-cours/tree/main/05-boucles)    
+5. [Les boucles](https://github.com/sonya76/php-cours/tree/main/05-boucles) 
+6. [Les objets](https://github.com/sonya76/php-poo)   
 ### Exercices
 [travaux](https://github.com/sonya76/php-cours/tree/main/travaux)
 
