@@ -10,6 +10,7 @@ Sonia chalal
 4. [Les conditions](https://github.com/sonya76/php-cours/tree/main/04-conditions)    
 5. [Les boucles](https://github.com/sonya76/php-cours/tree/main/05-boucles) 
 6. [Les objets](https://github.com/sonya76/php-poo)   
+7. [Les sessions](https://github.com/sonya76/)   
 ### Exercices
 [travaux](https://github.com/sonya76/php-cours/tree/main/travaux)
 
