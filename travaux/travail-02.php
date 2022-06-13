@@ -92,7 +92,7 @@ foreach ($articles as $key => $value) {
         <hr>
        </tr>
      </tbody>
-       <?php
+<?php
 }
 ?>
     </table>

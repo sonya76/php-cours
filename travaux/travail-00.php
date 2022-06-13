@@ -25,8 +25,8 @@ foreach ($nombres as $key => $value) {
   ?>
 <ul>
     <li><?php
-     $ispair =  $value % 2;
-     if ($ispair==0)
+     $ispair = $value % 2;
+     if ($ispair===0)
      {
      echo $value ." : pair";
      }
